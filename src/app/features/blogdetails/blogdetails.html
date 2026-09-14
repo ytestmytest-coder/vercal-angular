@@ -1,0 +1,67 @@
+
+<div class="blog-details-container">
+
+  <h1>Blog Details</h1>
+
+  <!-- Title -->
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input
+      id="title"
+      type="text"
+      [(ngModel)]="blogDetails!.title"
+    />
+  </div>
+
+  <!-- Description -->
+  <div class="form-group">
+    <label for="description">Description</label>
+    <textarea
+      id="description"
+      rows="10"
+      [(ngModel)]="blogDetails!.description"
+    ></textarea>
+  </div>
+
+  <!-- Author -->
+  <div class="form-group">
+    <label for="author">Author</label>
+    <input
+      id="author"
+      type="text"
+      [(ngModel)]="blogDetails!.author"
+      readonly
+    />
+  </div>
+
+  <!-- Date -->
+  <div class="form-group">
+    <label for="date">Date</label>
+    <input
+      id="date"
+      type="text"
+      [(ngModel)]="blogDetails!.date"
+      readonly
+    />
+  </div>
+
+  <!-- Buttons -->
+  <div class="actions">
+
+    <button
+      type="button"
+      (click) = updatedBlogDetail(blogDetails!)
+      >
+      Update
+    </button>
+
+    <button
+      type="button"
+      
+      >
+      Delete
+    </button>
+
+  </div>
+
+</div>

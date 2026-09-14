@@ -1,0 +1,21 @@
+
+<header class="header">
+  <div class="logo">
+    <a href="/">MyApp</a>
+  </div>
+
+  <nav class="nav-menu">
+    <a [routerLink]="['/']" >Home</a>
+    <a [routerLink]="['/aboutus']">About Us</a>
+    <a [routerLink]="['/contact']">Contact</a>
+
+    <a *ngIf="adminLogged" [routerLink]="['/create']">Create</a>
+  </nav>
+
+  <div class="header-right">
+    <span class="username">Hello Sam</span>
+    <a href="#" class="login-btn">Login</a>
+  </div>
+</header>
+
+
