@@ -19,4 +19,8 @@ describe('Aboutus', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('check-title', ()=>{
+    expect(component.title).toBe("aboutus works!")
+  });
 });
